@@ -1,0 +1,13 @@
+# Versions measured in the preparation Linux/Python 3.12 environment.
+# Install CPU torch separately using the official CPU index; platform wheels may differ.
+numpy==2.3.5
+scikit-learn==1.8.0
+faiss-cpu==1.15.1
+fastapi==0.142.2
+uvicorn==0.54.0
+streamlit==1.65.0
+PyMuPDF==1.26.6
+sentence-transformers==6.1.0
+transformers==5.19.0
+llama-cpp-python==0.3.36
+huggingface-hub==1.33.0

@@ -1,0 +1,4 @@
+Final UI AppTest: PASS
+Initial rendering and cited-answer interaction produced no exceptions.
+Generated citations displayed explicitly.
+Switching workspace clears stale answer display.

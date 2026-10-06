@@ -1,0 +1,206 @@
+[
+  {
+    "question": "What is the PedalPosition timeout in the current revision?",
+    "project": "powertrain",
+    "version": null,
+    "answer": "Generated response failed validation; inspect retrieved evidence and retry.",
+    "citations": [],
+    "insufficient_evidence": true,
+    "blocked": false,
+    "evidence": [
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#TIMEOUT",
+        "section_id": "TIMEOUT",
+        "text": "TorqueCoordinator uses a PedalPosition timeout of 50 ms. When a pedal signal is stale, TorqueRequest is set to zero and diagnostic event PEDAL_STALE is recorded.",
+        "score": 0.847899
+      },
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#REVISION",
+        "section_id": "REVISION",
+        "text": "Revision 2.0 changes pedal timeout from 100 ms to 50 ms, maximum torque from 300 Nm to 250 Nm, and TorqueCoordinator period from 20 ms to 10 ms.",
+        "score": 0.837885
+      },
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#COMPONENTS",
+        "section_id": "COMPONENTS",
+        "text": "Component: PedalSensor | input: RawPedal | output: PedalPosition | period_ms: 10\nComponent: TorqueCoordinator | input: PedalPosition | output: TorqueRequest | period_ms: 10\nComponent: MotorController | input: TorqueRequest | output: MotorCurrent | period_ms: 10",
+        "score": 0.727401
+      }
+    ],
+    "mode": "local",
+    "embedding": "BAAI/bge-small-en-v1.5",
+    "generation_error": "'answer'",
+    "raw_generation": "{\n  \"Citation\": [\n    \"HLD_POWERTRAIN@2.0#TIMEOUT\",\n    \"HLD_POWERTRAIN@2.0#REVISION\",\n    \"HLD_POWERTRAIN@2.0#COMPONENTS\"\n  ],\n  \"Insufficient_evidence\": false,\n  \"Answer\": \"50 ms\"\n}",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "latency_ms": 4654.187,
+    "confidence_note": "Retrieval similarity is not probability of correctness; citation validation checks IDs, not factual entailment."
+  },
+  {
+    "question": "What is the PedalPosition timeout in the current revision?",
+    "project": "powertrain",
+    "version": null,
+    "answer": "Generated response failed validation; inspect retrieved evidence and retry.",
+    "citations": [],
+    "insufficient_evidence": true,
+    "blocked": false,
+    "evidence": [
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#TIMEOUT",
+        "section_id": "TIMEOUT",
+        "text": "TorqueCoordinator uses a PedalPosition timeout of 50 ms. When a pedal signal is stale, TorqueRequest is set to zero and diagnostic event PEDAL_STALE is recorded.",
+        "score": 0.847899
+      },
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#REVISION",
+        "section_id": "REVISION",
+        "text": "Revision 2.0 changes pedal timeout from 100 ms to 50 ms, maximum torque from 300 Nm to 250 Nm, and TorqueCoordinator period from 20 ms to 10 ms.",
+        "score": 0.837885
+      },
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#COMPONENTS",
+        "section_id": "COMPONENTS",
+        "text": "Component: PedalSensor | input: RawPedal | output: PedalPosition | period_ms: 10\nComponent: TorqueCoordinator | input: PedalPosition | output: TorqueRequest | period_ms: 10\nComponent: MotorController | input: TorqueRequest | output: MotorCurrent | period_ms: 10",
+        "score": 0.727401
+      }
+    ],
+    "mode": "local",
+    "embedding": "BAAI/bge-small-en-v1.5",
+    "generation_error": "'answer'",
+    "raw_generation": "{\n  \"Citation\": [\n    \"HLD_POWERTRAIN@2.0#TIMEOUT\",\n    \"HLD_POWERTRAIN@2.0#REVISION\",\n    \"HLD_POWERTRAIN@2.0#COMPONENTS\"\n  ],\n  \"Insufficient_evidence\": false,\n  \"Answer\": \"50 ms\"\n}",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "latency_ms": 4918.038,
+    "confidence_note": "Retrieval similarity is not probability of correctness; citation validation checks IDs, not factual entailment."
+  },
+  {
+    "question": "What happens when a pedal signal is stale?",
+    "project": "powertrain",
+    "version": null,
+    "answer": "Generated response failed validation; inspect retrieved evidence and retry.",
+    "citations": [],
+    "insufficient_evidence": true,
+    "blocked": false,
+    "evidence": [
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#TIMEOUT",
+        "section_id": "TIMEOUT",
+        "text": "TorqueCoordinator uses a PedalPosition timeout of 50 ms. When a pedal signal is stale, TorqueRequest is set to zero and diagnostic event PEDAL_STALE is recorded.",
+        "score": 0.796204
+      },
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#REVISION",
+        "section_id": "REVISION",
+        "text": "Revision 2.0 changes pedal timeout from 100 ms to 50 ms, maximum torque from 300 Nm to 250 Nm, and TorqueCoordinator period from 20 ms to 10 ms.",
+        "score": 0.720222
+      },
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#SIGNALS",
+        "section_id": "SIGNALS",
+        "text": "Signal: PedalPosition | producer: PedalSensor | consumer: TorqueCoordinator | unit: percent | min: 0 | max: 100\nSignal: TorqueRequest | producer: TorqueCoordinator | consumer: MotorController | unit: Nm | min: 0 | max: 250",
+        "score": 0.673937
+      }
+    ],
+    "mode": "local",
+    "embedding": "BAAI/bge-small-en-v1.5",
+    "generation_error": "'answer'",
+    "raw_generation": "{\n  \"citation\": [\n    \"HLD_POWERTRAIN@2.0#TIMEOUT\",\n    \"HLD_POWERTRAIN@2.0#REVISION\",\n    \"HLD_POWERTRAIN@2.0#SIGNALS\"\n  ],\n  \"insufficient_evidence\": false\n}",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "latency_ms": 4072.043,
+    "confidence_note": "Retrieval similarity is not probability of correctness; citation validation checks IDs, not factual entailment."
+  },
+  {
+    "question": "What is the maximum TorqueRequest value?",
+    "project": "powertrain",
+    "version": null,
+    "answer": "Generated response failed validation; inspect retrieved evidence and retry.",
+    "citations": [],
+    "insufficient_evidence": true,
+    "blocked": false,
+    "evidence": [
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#STARTUP",
+        "section_id": "STARTUP",
+        "text": "During startup, TorqueCoordinator sets TorqueRequest to zero until a valid PedalPosition is available. MotorController initializes MotorCurrent to zero.",
+        "score": 0.741241
+      },
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#REVISION",
+        "section_id": "REVISION",
+        "text": "Revision 2.0 changes pedal timeout from 100 ms to 50 ms, maximum torque from 300 Nm to 250 Nm, and TorqueCoordinator period from 20 ms to 10 ms.",
+        "score": 0.706834
+      },
+      {
+        "doc_id": "HLD_POWERTRAIN",
+        "version": "2.0",
+        "project": "powertrain",
+        "current": true,
+        "source_file": "HLD_POWERTRAIN_v2.0.json",
+        "id": "HLD_POWERTRAIN@2.0#TIMEOUT",
+        "section_id": "TIMEOUT",
+        "text": "TorqueCoordinator uses a PedalPosition timeout of 50 ms. When a pedal signal is stale, TorqueRequest is set to zero and diagnostic event PEDAL_STALE is recorded.",
+        "score": 0.702135
+      }
+    ],
+    "mode": "local",
+    "embedding": "BAAI/bge-small-en-v1.5",
+    "generation_error": "'answer'",
+    "raw_generation": "{\n  \"citations\": [\n    \"HLD_POWERTRAIN@2.0#STARTUP\",\n    \"HLD_POWERTRAIN@2.0#REVISION\",\n    \"HLD_POWERTRAIN@2.0#TIMEOUT\"\n  ],\n  \"insufficient_evidence\": false\n}",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "latency_ms": 3562.933,
+    "confidence_note": "Retrieval similarity is not probability of correctness; citation validation checks IDs, not factual entailment."
+  }
+]

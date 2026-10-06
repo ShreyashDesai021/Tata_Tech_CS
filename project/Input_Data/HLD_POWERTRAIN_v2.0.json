@@ -1,0 +1,43 @@
+{
+  "doc_id": "HLD_POWERTRAIN",
+  "title": "Powertrain HLD",
+  "version": "2.0",
+  "current": true,
+  "project": "powertrain",
+  "synthetic": true,
+  "approval_status": "synthetic_demo_only",
+  "sections": [
+    {
+      "section_id": "OVERVIEW",
+      "text": "The synthetic powertrain project contains TorqueCoordinator, PedalSensor and MotorController. The current reviewed teaching revision is 2.0."
+    },
+    {
+      "section_id": "COMPONENTS",
+      "text": "Component: PedalSensor | input: RawPedal | output: PedalPosition | period_ms: 10\nComponent: TorqueCoordinator | input: PedalPosition | output: TorqueRequest | period_ms: 10\nComponent: MotorController | input: TorqueRequest | output: MotorCurrent | period_ms: 10"
+    },
+    {
+      "section_id": "SIGNALS",
+      "text": "Signal: PedalPosition | producer: PedalSensor | consumer: TorqueCoordinator | unit: percent | min: 0 | max: 100\nSignal: TorqueRequest | producer: TorqueCoordinator | consumer: MotorController | unit: Nm | min: 0 | max: 250"
+    },
+    {
+      "section_id": "TIMEOUT",
+      "text": "TorqueCoordinator uses a PedalPosition timeout of 50 ms. When a pedal signal is stale, TorqueRequest is set to zero and diagnostic event PEDAL_STALE is recorded."
+    },
+    {
+      "section_id": "STARTUP",
+      "text": "During startup, TorqueCoordinator sets TorqueRequest to zero until a valid PedalPosition is available. MotorController initializes MotorCurrent to zero."
+    },
+    {
+      "section_id": "INTERFACES",
+      "text": "Interface: ITorque | sender: TorqueCoordinator | receiver: MotorController | sender_unit: Nm | receiver_unit: Nm\nInterface: IPedal | sender: PedalSensor | receiver: TorqueCoordinator | sender_unit: percent | receiver_unit: percent"
+    },
+    {
+      "section_id": "DEPENDENCIES",
+      "text": "Dependency: TorqueCoordinator -> PedalSensor\nDependency: MotorController -> TorqueCoordinator"
+    },
+    {
+      "section_id": "REVISION",
+      "text": "Revision 2.0 changes pedal timeout from 100 ms to 50 ms, maximum torque from 300 Nm to 250 Nm, and TorqueCoordinator period from 20 ms to 10 ms."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "doc_id": "HLD_BODY",
+  "title": "Body Controller HLD",
+  "version": "1.0",
+  "current": true,
+  "project": "body",
+  "synthetic": true,
+  "approval_status": "synthetic_demo_only",
+  "sections": [
+    {
+      "section_id": "OVERVIEW",
+      "text": "The synthetic body controller project controls exterior lights. It contains LightSensor, LightController and LampDriver."
+    },
+    {
+      "section_id": "COMPONENTS",
+      "text": "Component: LightSensor | input: AmbientLight | output: LightLevel | period_ms: 100\nComponent: LightController | input: LightLevel | output: LampCommand | period_ms: 50\nComponent: LampDriver | input: LampCommand | output: LampState | period_ms: 20"
+    },
+    {
+      "section_id": "SIGNALS",
+      "text": "Signal: LightLevel | producer: LightSensor | consumer: LightController | unit: lux | min: 0 | max: 100000\nSignal: LampCommand | producer: LightController | consumer: LampDriver | unit: boolean | min: 0 | max: 1"
+    },
+    {
+      "section_id": "FALLBACK",
+      "text": "If LightLevel is unavailable for 500 ms, LightController switches lamps on and records LIGHT_SENSOR_TIMEOUT."
+    },
+    {
+      "section_id": "DEPENDENCIES",
+      "text": "Dependency: LightController -> LightSensor\nDependency: LampDriver -> LightController"
+    }
+  ]
+}

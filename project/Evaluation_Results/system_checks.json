@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Current revision excludes old powertrain knowledge",
+    "pass": true
+  },
+  {
+    "name": "Project filtering isolates body knowledge",
+    "pass": true
+  },
+  {
+    "name": "Historical revision selection",
+    "pass": true
+  },
+  {
+    "name": "Current powertrain has three components",
+    "pass": true
+  },
+  {
+    "name": "Thermal seeded anomalies are both detected",
+    "pass": true
+  },
+  {
+    "name": "Powertrain has no seeded anomaly",
+    "pass": true
+  },
+  {
+    "name": "Comparison includes changed timeout",
+    "pass": true
+  },
+  {
+    "name": "Injection attempt is blocked",
+    "pass": true
+  },
+  {
+    "name": "Unsupported upload rejected",
+    "pass": true
+  },
+  {
+    "name": "Non-synthetic upload rejected",
+    "pass": true
+  },
+  {
+    "name": "Valid JSON is accepted",
+    "pass": true
+  },
+  {
+    "name": "Text-layer PDF parsed",
+    "pass": true
+  },
+  {
+    "name": "Empty/scanned PDF rejected with OCR limitation",
+    "pass": true
+  },
+  {
+    "name": "Human review saved",
+    "pass": true
+  },
+  {
+    "name": "API health",
+    "pass": true
+  },
+  {
+    "name": "API cited answer",
+    "pass": true
+  },
+  {
+    "name": "API rejects invalid project",
+    "pass": true
+  },
+  {
+    "name": "API rejects empty question",
+    "pass": true
+  }
+]

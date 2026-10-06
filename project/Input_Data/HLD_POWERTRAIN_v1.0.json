@@ -1,0 +1,27 @@
+{
+  "doc_id": "HLD_POWERTRAIN",
+  "title": "Powertrain HLD",
+  "version": "1.0",
+  "current": false,
+  "project": "powertrain",
+  "synthetic": true,
+  "approval_status": "synthetic_demo_only",
+  "sections": [
+    {
+      "section_id": "OVERVIEW",
+      "text": "The synthetic powertrain project contains TorqueCoordinator, PedalSensor and MotorController. It is a teaching example, not a production AUTOSAR configuration."
+    },
+    {
+      "section_id": "COMPONENTS",
+      "text": "Component: PedalSensor | input: RawPedal | output: PedalPosition | period_ms: 10\nComponent: TorqueCoordinator | input: PedalPosition | output: TorqueRequest | period_ms: 20\nComponent: MotorController | input: TorqueRequest | output: MotorCurrent | period_ms: 10"
+    },
+    {
+      "section_id": "SIGNALS",
+      "text": "Signal: TorqueRequest | producer: TorqueCoordinator | consumer: MotorController | unit: Nm | min: 0 | max: 300"
+    },
+    {
+      "section_id": "TIMEOUT",
+      "text": "TorqueCoordinator uses a PedalPosition timeout of 100 ms. When a pedal signal is stale, TorqueRequest is set to zero and a diagnostic event is recorded."
+    }
+  ]
+}

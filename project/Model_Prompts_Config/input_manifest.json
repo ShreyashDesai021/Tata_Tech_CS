@@ -1,0 +1,50 @@
+{
+  "description": "Original synthetic teaching corpus; not OEM data or licensed standards content",
+  "documents": [
+    {
+      "file": "HLD_BODY_v1.0.json",
+      "sha256": "9c965f0f5a3934871bb20fbc4ecb49a9b5b24cf8bddacfe3ff36301bbbb35a12",
+      "doc_id": "HLD_BODY",
+      "version": "1.0",
+      "project": "body",
+      "current": true,
+      "section_count": 5
+    },
+    {
+      "file": "HLD_POWERTRAIN_v1.0.json",
+      "sha256": "947afd18e86b90e2e9ca0bb49a2e79588a6a878c642c0bc5d264c3b573e43aa0",
+      "doc_id": "HLD_POWERTRAIN",
+      "version": "1.0",
+      "project": "powertrain",
+      "current": false,
+      "section_count": 4
+    },
+    {
+      "file": "GUIDE_REVIEW_v1.0.json",
+      "sha256": "6de268591c44be21e49fb0de565615bf8c62373c69b428a861ee82fde2a81dfa",
+      "doc_id": "GUIDE_REVIEW",
+      "version": "1.0",
+      "project": "guidance",
+      "current": true,
+      "section_count": 3
+    },
+    {
+      "file": "HLD_POWERTRAIN_v2.0.json",
+      "sha256": "b1478fb8868f665d3cfc2085a9a9a1d43a66be93423e9ace1882baecaab3524a",
+      "doc_id": "HLD_POWERTRAIN",
+      "version": "2.0",
+      "project": "powertrain",
+      "current": true,
+      "section_count": 8
+    },
+    {
+      "file": "HLD_THERMAL_v1.0.json",
+      "sha256": "1189c2b629fd602a096535955211b012593683cd709477f5ffa5272d22094acf",
+      "doc_id": "HLD_THERMAL",
+      "version": "1.0",
+      "project": "thermal",
+      "current": true,
+      "section_count": 5
+    }
+  ]
+}

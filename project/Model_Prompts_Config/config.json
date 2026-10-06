@@ -1,0 +1,22 @@
+{
+  "project_title": "AUTOSAR HLD Intelligence Assistant",
+  "case_study": "CS1",
+  "top_k": 3,
+  "min_score": 0.12,
+  "llm": "Qwen2.5-0.5B-Instruct-GGUF Q4_K_M",
+  "embedding": "BAAI/bge-small-en-v1.5",
+  "vector_store": "FAISS IndexFlatIP",
+  "default_mode": "baseline",
+  "model_path": "model_cache/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "ollama_model": "qwen2.5:1.5b",
+  "ollama_embedding": "nomic-embed-text",
+  "ollama_url": "http://127.0.0.1:11434",
+  "generation": {
+    "temperature": 0,
+    "max_tokens": 300,
+    "seed": 42,
+    "context_tokens": 2048
+  },
+  "embedding_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "qwen_revision": "9217f5db79a29953eb74d5343926648285ec7e67"
+}

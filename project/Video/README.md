@@ -1,0 +1,5 @@
+The MP4 is an automated captioned recording of the actual local Streamlit system. It demonstrates synthetic input, the pipeline, cited interactions, revision selection/comparison, structured findings, review workflow and saved evaluation evidence. It contains no student voice and does not prove student verification. Watch it completely before using it. Optional narration guidance is provided. Student review and use of the supplied student signature were confirmed on 07/10/2026; faculty approval remains separate.
+
+To recreate an automated recording: install Playwright (`python -m pip install playwright`), run `python -m playwright install chromium ffmpeg`, ensure the local model/cache are present, then run `python Code/record_demo.py`. This helper records genuine UI interactions and captions; it does not synthesize a mock UI.
+
+Student review of the submitted video and artifacts was confirmed on 07/10/2026. The recording was captured before that confirmation; its historical demo review note is preserved. Runtime engineering approval of individual responses is a separate decision.

@@ -1,0 +1,26 @@
+{
+  "mode": "baseline",
+  "test_count": 24,
+  "pass_count": 18,
+  "overall_pass_rate": 0.75,
+  "retrieval_hit_at_3": 0.75,
+  "required_terms_accuracy": 0.9,
+  "abstention_accuracy": 1.0,
+  "citation_id_validity_on_answered": 1.0,
+  "citation_presence_on_answered": 1.0,
+  "warm_query_latency_mean_ms": 0.49475,
+  "warm_query_latency_p95_ms": 0.7852499999999999,
+  "engine_initialization_ms": 3.17,
+  "limitations": "Citation ID validity is not entailment. Required-term matching is a narrow proxy. Same synthetic design corpus; not independent automotive validation. No reviewer confirmation or productivity benchmark.",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0",
+    "faiss-cpu": "1.15.1",
+    "streamlit": "1.65.0",
+    "fastapi": "0.142.2",
+    "sentence-transformers": "6.1.0",
+    "llama-cpp-python": "0.3.36"
+  }
+}

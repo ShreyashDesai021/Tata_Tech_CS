@@ -1,0 +1,31 @@
+{
+  "doc_id": "HLD_THERMAL",
+  "title": "Thermal Controller HLD",
+  "version": "1.0",
+  "current": true,
+  "project": "thermal",
+  "synthetic": true,
+  "approval_status": "synthetic_demo_only",
+  "sections": [
+    {
+      "section_id": "COMPONENTS",
+      "text": "Component: TemperatureSensor | input: RawTemperature | output: CoolantTemperature | period_ms: 100\nComponent: ThermalController | input: CoolantTemperature | output: FanDuty | period_ms: 100\nComponent: FanDriver | input: FanDuty | output: FanSpeed | period_ms: 20"
+    },
+    {
+      "section_id": "SIGNALS",
+      "text": "Signal: CoolantTemperature | producer: TemperatureSensor | consumer: ThermalController | unit: Celsius | min: -40 | max: 150\nSignal: FanDuty | producer: ThermalController | consumer: FanDriver | unit: percent | min: 0 | max: 100"
+    },
+    {
+      "section_id": "CONTROL",
+      "text": "ThermalController requests 80 percent FanDuty when CoolantTemperature exceeds 95 Celsius. These are synthetic teaching thresholds."
+    },
+    {
+      "section_id": "INTERFACES",
+      "text": "Interface: IFan | sender: ThermalController | receiver: FanDriver | sender_unit: percent | receiver_unit: rpm"
+    },
+    {
+      "section_id": "DEPENDENCIES",
+      "text": "Dependency: ThermalController -> TemperatureSensor\nDependency: FanDriver -> ThermalController\nDependency: ThermalController -> MissingSensor"
+    }
+  ]
+}

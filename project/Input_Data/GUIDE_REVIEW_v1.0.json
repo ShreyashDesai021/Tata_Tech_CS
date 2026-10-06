@@ -1,0 +1,23 @@
+{
+  "doc_id": "GUIDE_REVIEW",
+  "title": "Architecture Review Guide",
+  "version": "1.0",
+  "current": true,
+  "project": "guidance",
+  "synthetic": true,
+  "approval_status": "synthetic_demo_only",
+  "sections": [
+    {
+      "section_id": "REVIEW",
+      "text": "Architecture review checks that signal producers and consumers refer to declared components, interface units agree, and dependency targets exist. Flagged findings are candidates requiring human review."
+    },
+    {
+      "section_id": "VERSION",
+      "text": "Default question answering uses only the current revision in the selected project. Historical revisions must be explicitly selected. Revision comparison reports changed sections without automatic approval."
+    },
+    {
+      "section_id": "LIMITS",
+      "text": "The assistant is a synthetic demonstrator. It cannot certify AUTOSAR compliance or approve safety, security or production design decisions. All outputs require an engineering reviewer."
+    }
+  ]
+}
